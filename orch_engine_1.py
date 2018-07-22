@@ -10,9 +10,18 @@ from service_scheduler import Scheduler
 class Engine():
     def __init__(self, engine_name):
         self.engine_name = engine_name
-        region_name = engine_name[engine_name.find('_')+1:]
-        self.region_su = Regionsupervisor(region_name)
+        self.region_su = Regionsupervisor()
         self.scheduler = Scheduler(self.region_su)
     
-    def assign_service_to_scheduler(self, task_details, origin_node):
-        self.scheduler.schedule(task_details, origin_node)
+    def assign_service_to_scheduler(self, task_details, origin_node, algorithm, level, generation, mutation_factor):
+        self.scheduler.schedule(task_details, origin_node, algorithm, level, generation, mutation_factor)
+    
+    def add_map(self, city_map):
+        self.region_su.add_map(city_map)
+        
+    def get_map(self):
+        return self.region_su.get_map()
+    def add_blocks(self, blocks):
+        self.region_su.add_blocks(blocks)
+    def get_blocks(self):
+        return self.region_su.get_blocks()

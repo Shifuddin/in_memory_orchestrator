@@ -5,14 +5,16 @@ Created on Sun Jul  8 23:20:16 2018
 
 @author: shifu
 """
-from decimal import Decimal
-from random import sample
+
+from genetic_algorithm import GeneticAlgorithm
+from sequential_algorithm import Sequential_Algorithm
 class Scheduler():
     def __init__(self, region_supervisor):
         self.region_sp = region_supervisor
+        self.genetic = GeneticAlgorithm(region_supervisor)
+        self.sequential = Sequential_Algorithm(region_supervisor)
 
-
-    
+    '''
     def get_exec_time(self, resource, band, latency,from_origin):
         
         avg_band = (self.origin_block.get('band') + band) /2
@@ -28,93 +30,80 @@ class Scheduler():
         total_ex_time = cpu_time + avg_wt + dtt            
         
         return total_ex_time
-    def third_party(self, block_obj, from_origin):
-        
-        if from_origin == True:
-            block_obj = self.origin_block
-        
-        resources = sample (block_obj.get('resources'), len(block_obj.get('resources')))
-        for resource in resources:
-            yield resource.ip, resource.memory_mb, self.get_exec_time(resource, block_obj.get('band'), block_obj.get('latency'), from_origin)
-            
-    def bfs_adjacency_list(self, graph, task_details, origin_postal_address):
     
-        result, queue = [], []
-        
-        origin = origin_postal_address[0:origin_postal_address.find(',')]
-        extra_part = origin_postal_address[origin_postal_address.find(',')+1:]
-        
-        queue.append(origin)
-        result.append(origin)
-        
-        min_node = {'address':'','time': 10000, 'memory': 0,'ip': ''}
-        matched_nodes =[]
-        self.origin_block = self.region_sp.in_memory_dao.get_block_from_postal_address(origin_postal_address)
-        
-        if self.origin_block is not None:
-            
-            all_ex_time = self.third_party(None, True)
-            
-            for ip, memory_mb, ex_time in all_ex_time:
-                
-                if ex_time < min_node.get('time') and memory_mb >= self.task_details.get('required_memory_mb'):
-                    min_node['time'] = ex_time
-                    min_node['memory'] = memory_mb
-                    min_node['ip'] = ip
-                    min_node['address'] = origin_postal_address
-                
-                if ex_time <= self.task_details.get('required_exe_time_sc') and memory_mb >= self.task_details.get('required_memory_mb'):
-                    matched_nodes.append({'address':origin_postal_address,'ip':ip,'time':ex_time, 'memory':memory_mb})
-                 
-                if len(matched_nodes) >= 2:
-                    return matched_nodes            
 
-        else:
-            print ('Task origin can''t be found')
-            
+    '''
+    
+    def find_band_latency_origin(self,origin_building):
+        try:
+            origin_block = self.region_sp.get_block(origin_building)
+            return origin_block.get('band'), origin_block.get('latency')
+        except Exception:
+            return None, None
+        
+    def bfs_traversal(self, graph, origin, level):
+        result, queue = [], []
+        current_level = 0
+        queue.append(origin)
+        queue.append(None)
+        result.append(origin)
+        current_level += 1
+        
+        if current_level == level:
+            return result
+    
         try:
             while queue:
-                element = queue.pop()
+            
+                element = queue.pop(0)
+                
+                if element == None:
+                    queue.append(None)
+                    element = queue.pop(0)
+                    current_level += 1
+                    
+                    if current_level == level:
+                        return result
                 for adja in graph[element]:
                     if adja not in result:
-                        queue.append(adja)
-                        result.append(adja)
-                        
-                        adja_postal_address = adja + ',' + extra_part
-                        cur_block_obj = self.region_sp.in_memory_dao.get_block_from_postal_address(adja_postal_address)
-                        
-                        if cur_block_obj is not None:
-                            
-                            all_ex_time = self.third_party(cur_block_obj, False)
-                            for ip, memory_mb, ex_time in all_ex_time:
-                                #print (ip + ' Required time ' + str(ex_time) + ' expected: ' + str(self.task_details.get('required_exe_time_sc')))
-                                if ex_time < min_node.get('time'):
-                                    min_node['time'] = ex_time
-                                    min_node['ip'] = ip
-                                    min_node['address'] = adja_postal_address
-                
-                                if ex_time <= self.task_details.get('required_exe_time_sc') and memory_mb >= self.task_details.get('required_memory_mb'):
-                                    matched_nodes.append({'address':adja_postal_address,'ip':ip,'time':ex_time , 'memory':memory_mb})
-                
-                                if len(matched_nodes) >= 2:
-                                    return matched_nodes
-
-                       
-            
-            return [min_node]
+                          queue.append(adja)
+                          result.append(adja)
+            return result
         except KeyError as KE:
-            return 'Position in the region unknown ' + str(KE)
+            print (str(KE))
+        except IndexError as IE:
+            print (str(IE))
+        except Exception as e:
+            print (str(e))
+        return result
         
     
-    def schedule(self, task_details, origin_node):
+  
+    def schedule(self, task_details, origin_node, algorithm, level, generation, mutation_factor):
         
-        self.task_details = task_details
-        print ('Origin of the task ' + origin_node.get('postal_address'))
-        matched_nodes = self.bfs_adjacency_list(self.region_sp.get_region_map(), task_details, origin_node.get('postal_address'))
+    
+        origin_band, origin_latency = self.find_band_latency_origin(origin_node)
+    
         
-        print ('Expected ex time: ' + str(self.task_details.get('required_exe_time_sc')))
-        print ('Expected memory: ' + str(self.task_details.get('required_memory_mb')))
-        print (matched_nodes)
+        bfs_result = self.bfs_traversal(self.region_sp.get_map(), origin_node, level)
+        
+        if algorithm == 'sequential_all':
+        
+            computing_nodes = self.sequential.find_available_computing_nodes(task_details, origin_band, origin_latency, bfs_result, True)
+        
+            print (computing_nodes)
+            
+        elif algorithm == 'sequential_fast':
+        
+            computing_nodes = self.sequential.find_available_computing_nodes(task_details, origin_band, origin_latency, bfs_result, False)
+        
+            print (computing_nodes)
+        
+        elif algorithm == 'genetic_algo':
+            self.genetic.get_matching_node(bfs_result, origin_band, origin_latency, task_details, generation, mutation_factor)
+            
+            
+
 
         
  

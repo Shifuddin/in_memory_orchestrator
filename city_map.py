@@ -22,7 +22,7 @@ graph_adjacency_list_80805 = {'Alte Heide 1': set([ 'Alte Heide 2', 'Frottmaning
         'Christoph-Probst-str 2': set(['Christoph-Probst-str 1', 'Hans-Leipelt-Str 2', 'Christoph-Probst-str 3']),
         'Christoph-Probst-str 3': set(['Christoph-Probst-str 2', 'Hans-Leipelt-Str 3', 'Christoph-Probst-str 4']),
         'Christoph-Probst-str 4': set(['Christoph-Probst-str 3', 'Hans-Leipelt-Str 4'])}
-print (graph_adjacency_list_80805)
+
 
 graph_adjacency_list_80806 = {'Beltweg 1': set([ 'Beltweg 2', 'Guerickestra 1']),
         'Beltweg 2': set(['Beltweg 1', 'Beltweg 3', 'Guerickestra 2']),

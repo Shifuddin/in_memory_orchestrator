@@ -12,23 +12,25 @@ class Dao_in_memory():
     
     def __init__(self, region_name):
         self.db = Base(region_name, save_to_file=False)
-        self.db.create('postal_address', 'band', 'latency', 'resources', mode="override")
+        self.db.create('address', 'band', 'latency', 'resources', mode="override")
     
-    def add_new_block(self, block):
-        self.db.insert(postal_address=block.postal_address, band=block.band,
-                       latency=block.latency, resources=block.resources)
+    def add_blocks(self, blocks):
+        
+        for block in blocks:
+            self.db.insert(address=block.get('address'), band=block.get('band'),
+                       latency=block.get('latency'), resources=block.get('resources'))
     
-    def get_block_from_postal_address(self, address):
-        blocks = self.db(postal_address=address)
-    
-        if len(blocks) > 0:
-            return blocks[0]
-        else:
+    def get_block(self, address):
+        
+        try:
+            block = self.db(address=address)[0]
+            return block
+        except IndexError:
             return None
+        
     def get_all_blocks(self):
         
-        for r in self.db:
-            yield r
+        return self.db
         
     
         

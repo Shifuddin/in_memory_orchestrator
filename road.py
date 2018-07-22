@@ -45,17 +45,17 @@ def generate_resource_under_building(buildings):
         resources.append(resource)
     return resources
 
-def create_adjacency_list_buildings(city_roads):
+def create_adjacency_list_buildings(buildings):
     
     graph_adjacency_list = {}
     
-    for road in city_roads:
+    for building in buildings:
         building_adjacency = set([])    
             
         for i in range(4):
-            building_adjacency.add(choice(city_roads))
+            building_adjacency.add(choice(buildings))
                 
-        graph_adjacency_list[road] = building_adjacency
+        graph_adjacency_list[building] = building_adjacency
                 
     return graph_adjacency_list
 

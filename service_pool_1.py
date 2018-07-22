@@ -11,6 +11,6 @@ class ServicePool():
     def __init__(self, callback):
         self.callback = callback
         
-    def accept_service(self, command, requirements, iot_resource):
-        self.callback(command, requirements, iot_resource)
+    def accept_service(self, command, task_details, origin_block, algorithm, level, generation, mutation_factor):
+        self.callback(command, task_details, origin_block, algorithm, level, generation, mutation_factor)
     

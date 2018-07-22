@@ -7,10 +7,12 @@ Created on Wed Jul  4 22:10:00 2018
 """
 from orch_engine_1 import Engine
 class EngineManager():
-    def __init__(self, dao):
-        self.engine_list = []
-        self.dao = dao
-        self.create_engine_on_startup()
+    def __init__(self, city_map):
+        #self.engine_list = []
+        #self.dao = dao
+        #self.create_engine_on_startup()
+        self.engine = Engine('Munich')
+        self.engine.add_map(city_map)
         
     def create_engine_on_startup(self):
         blocks = self.dao.get_all_blocks()
@@ -48,6 +50,9 @@ class EngineManager():
         '''
         Take blocks from resouce pool to be added to the database
         '''
+        
+        self.engine.add_blocks(blocks)
+        '''
         for block in blocks:
             if self.dao.add_new_block(block):
                 postal_address = block.get('postal_address')
@@ -56,11 +61,13 @@ class EngineManager():
                 self.create_new_engine(city_name+'_'+region_name, block)
             else:
                 print ("Block already exists. Need block update or resource update")
-                
+        '''
                 
         
-    def place_service(self, command, task_details, origin_node):
+    def place_service(self, command, task_details, origin_node, algorithm, level, generation, mutation_factor):
         
+        self.engine.assign_service_to_scheduler(task_details, origin_node, algorithm, level, generation, mutation_factor)
+        '''
         origin_postal_address = origin_node.get('postal_address')
         region_name = origin_postal_address[origin_postal_address.find(',')+2: origin_postal_address.rfind(',')]
         city_name = origin_postal_address[origin_postal_address.rfind(',')+2:]
@@ -68,13 +75,20 @@ class EngineManager():
         for engine in self.engine_list:
             if engine_name == engine.engine_name:
                 engine.assign_service_to_scheduler(task_details, origin_node)
-        
+        '''
                 
-    def inspect_all_engines(self):
+    def inspect_engine(self):
+        city_map = self.engine.get_map()
+        print (city_map)
+        print (len(city_map))
         
-        for engine in self.engine_list:
-            print (engine.engine_name)
-            engine.region_su.get_blocks()
-            print ('\n')
+        blocks = self.engine.get_blocks()
+        
+        for block in blocks:
+            print (block)
+        #print (len(available_blocks))
+        
+        
+        
         
         
