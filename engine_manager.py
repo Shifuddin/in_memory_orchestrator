@@ -46,6 +46,9 @@ class EngineManager():
             orch_en.region_su.in_memory_dao.add_new_block(block)
             self.engine_list.append(orch_en)
     
+    def update_blocks(self, blocks):
+        self.engine.update_blocks(blocks)
+        
     def place_blocks(self, blocks):
         '''
         Take blocks from resouce pool to be added to the database
@@ -61,8 +64,7 @@ class EngineManager():
                 self.create_new_engine(city_name+'_'+region_name, block)
             else:
                 print ("Block already exists. Need block update or resource update")
-        '''
-                
+        '''         
         
     def place_service(self, command, task_details, origin_node, algorithm, level, generation, mutation_factor):
         

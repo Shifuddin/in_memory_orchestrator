@@ -20,6 +20,15 @@ class Dao_in_memory():
             self.db.insert(address=block.get('address'), band=block.get('band'),
                        latency=block.get('latency'), resources=block.get('resources'))
     
+    def update_blocks(self, blocks):
+        for block in blocks:
+            try:
+                old_record = self.db(address=block.get('address'))[0]
+                self.db.update(old_record, band=block.get('band'),
+                       latency=block.get('latency'), resources=block.get('resources'))
+            except IndexError:
+                print ('Not present')
+            
     def get_block(self, address):
         
         try:

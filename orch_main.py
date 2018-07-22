@@ -35,7 +35,7 @@ Resource pool is created here.
 Callback function of engine manage is gived here, so that when new 
 resources arrive it calls the engine manage to make the entry into the db
 '''
-resourcepool = ResourcePool(engine_mngr.place_blocks)
+resourcepool = ResourcePool(engine_mngr.place_blocks, engine_mngr.update_blocks)
 
 '''
 Service pool is created here. 
@@ -66,9 +66,10 @@ assign new services to orchestrator for scheduling
 origin_block = choice(list(buildings))
 start = current_time()
 
-# call service pool with task, task details, origin block, algorithm, level
-servicepool.accept_service('hello shifudding', rg.generate_task_details() ,origin_block, 'sequential_fast', 4, 5,  0.01)
+# call service pool with task, task details, origin block, algorithm, level, generation and mutation factor
+servicepool.accept_service('hello shifudding', rg.generate_task_details() ,origin_block, 'genetic_algo', 4, 5,  0.01)
 print ('Time elapsed: ' + str(current_time() - start))
+resourcepool.update_bulk_resources(rg.generate_computing_nodes(buildings))
 
 
 # add single resource

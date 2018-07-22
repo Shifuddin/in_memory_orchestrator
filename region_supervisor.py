@@ -19,6 +19,8 @@ class Regionsupervisor():
     
     def add_blocks(self, blocks):
         self.in_memory_dao.add_blocks(blocks)
+    def update_blocks(self, blocks):
+        self.in_memory_dao.update_blocks(blocks)
     def get_blocks(self):
     
         blocks = self.in_memory_dao.get_all_blocks()
