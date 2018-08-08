@@ -44,7 +44,7 @@ def generate_computing_nodes(buildings):
         resource['latency'] = uniform(0, 0.5)
         
         nodes = []
-        for j in range (5):
+        for j in range (10):
             node = {}
             node['ip'] = str (randint (10, 20)) + '.' + str(randint(20, 30)) + '.' + str (randint (30, 50)) + '.' + str(randint(50, 70))
             node['cpu_mips'] = randint (3300, 4000)

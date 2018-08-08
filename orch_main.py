@@ -67,9 +67,9 @@ origin_block = choice(list(buildings))
 start = current_time()
 
 # call service pool with task, task details, origin block, algorithm, level, generation and mutation factor
-servicepool.accept_service('hello shifudding', rg.generate_task_details() ,origin_block, 'genetic_algo', 4, 5,  0.01)
+servicepool.accept_service('hello shifudding', rg.generate_task_details() ,origin_block, 'sequential_fast', 4, 5,  0.01)
 print ('Time elapsed: ' + str(current_time() - start))
-resourcepool.update_bulk_resources(rg.generate_computing_nodes(buildings))
+#resourcepool.update_bulk_resources(rg.generate_computing_nodes(buildings))
 
 
 # add single resource
