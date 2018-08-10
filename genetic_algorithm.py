@@ -195,7 +195,7 @@ class GeneticAlgorithm():
             mating_pool = self.calculate_fitness_mating_pool(current_population)
             
             if len(mating_pool) == 0:
-                print ('Algorithm terminated.')
+                #print ('Algorithm terminated.')
                 break
             
             new_population = []
@@ -218,10 +218,18 @@ class GeneticAlgorithm():
                     matched_nodes.add(current_population[i][j]) 
         print (matched_nodes)
         '''
-        matche_nodes = {}
+        full_matched_nodes = {}
+        half_matched_nodes = {}
         for chromose in current_population:
             for dna in chromose:
                 if dna.get('expected_ex_time') <= task_details.get('required_exe_time_sc') and dna.get('avail_mem_mb') >= task_details.get('required_memory_mb'):
-                    matche_nodes[dna.get('address') + ', ' +dna.get('ip')] = dna.get('expected_ex_time') 
-                    
-        print (matche_nodes)
+                    full_matched_nodes[dna.get('address') + ', ' +dna.get('ip')] = dna.get('expected_ex_time') 
+                elif dna.get('avail_mem_mb') >= task_details.get('required_memory_mb'):
+                    half_matched_nodes[dna.get('address') + ', ' +dna.get('ip')] = dna.get('expected_ex_time') 
+        
+        if len(full_matched_nodes) > 0:
+            return full_matched_nodes, 0
+        elif len(half_matched_nodes) > 0:
+            return half_matched_nodes, 1
+        else:
+            return -1, -1

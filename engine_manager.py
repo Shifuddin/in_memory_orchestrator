@@ -66,9 +66,9 @@ class EngineManager():
                 print ("Block already exists. Need block update or resource update")
         '''         
         
-    def place_service(self, command, task_details, origin_node, algorithm, level, generation, mutation_factor):
+    def place_service(self, service_id, task_details, origin_node, algorithm, level, generation, mutation_factor, scheduling_policy):
         
-        self.engine.assign_service_to_scheduler(task_details, origin_node, algorithm, level, generation, mutation_factor)
+        self.engine.assign_service_to_service_queue(service_id, task_details, origin_node, algorithm, level, generation, mutation_factor, scheduling_policy)
         '''
         origin_postal_address = origin_node.get('postal_address')
         region_name = origin_postal_address[origin_postal_address.find(',')+2: origin_postal_address.rfind(',')]
@@ -78,7 +78,8 @@ class EngineManager():
             if engine_name == engine.engine_name:
                 engine.assign_service_to_scheduler(task_details, origin_node)
         '''
-                
+    def wait_for_finish(self):
+        self.engine.join_threads()
     def inspect_engine(self):
         city_map = self.engine.get_map()
         print (city_map)

@@ -42,7 +42,7 @@ Service pool is created here.
 Callback function of engine manage is gived here, so that when new 
 service arrives it calls the engine manager for scheduling
 '''
-servicepool = ServicePool(engine_mngr.place_service)
+servicepool = ServicePool(engine_mngr.place_service, engine_mngr.wait_for_finish)
 
 
 '''
@@ -62,13 +62,16 @@ Service pool accepts service here
 It is a high level interface to 
 assign new services to orchestrator for scheduling
 '''
-# origin block where task generated
-origin_block = choice(list(buildings))
+
 start = current_time()
 
-# call service pool with task, task details, origin block, algorithm, level, generation and mutation factor
-servicepool.accept_service('hello shifudding', rg.generate_task_details() ,origin_block, 'sequential_fast', 4, 5,  0.01)
-print ('Time elapsed: ' + str(current_time() - start))
+for i in range(1, 50):
+    origin_block = choice(list(buildings))
+    # call service pool with task, task details, origin block, algorithm, level, generation, mutation factor, scheduling policy
+    servicepool.accept_service('Service: ' + str(i), rg.generate_task_details() ,origin_block, 'sequential_fast', 4, 5,  0.01, 0)
+    
+servicepool.wait_for_finish()
+print ('Time elapsed: ' + str((current_time() - start)/1000) + '\n')
 #resourcepool.update_bulk_resources(rg.generate_computing_nodes(buildings))
 
 
