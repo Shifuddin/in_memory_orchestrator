@@ -33,7 +33,7 @@ def create_adjacency_list_buildings(buildings):
         graph_adjacency_list[building] = building_adjacency
                 
     return graph_adjacency_list
-def generate_computing_nodes(buildings):
+def generate_computing_nodes(buildings, resource_per_block):
     
     resources = []
 
@@ -44,7 +44,7 @@ def generate_computing_nodes(buildings):
         resource['latency'] = uniform(0, 0.5)
         
         nodes = []
-        for j in range (10):
+        for j in range (resource_per_block):
             node = {}
             node['ip'] = str (randint (10, 20)) + '.' + str(randint(20, 30)) + '.' + str (randint (30, 50)) + '.' + str(randint(50, 70))
             node['cpu_mips'] = randint (3300, 4000)

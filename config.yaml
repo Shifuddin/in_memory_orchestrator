@@ -1,0 +1,8 @@
+algorithm: ga
+ga_properties:
+    threshold: 10
+    mutation_factor: 0.01
+number_blocks: 5000
+resource_per_block: 10
+scheduling_policy: 0
+search_depth: 5

@@ -1,0 +1,340 @@
+08/12/2018 02:07:02 AM Service: 1 in scheduling stage
+08/12/2018 02:07:02 AM Service: 2 in scheduling stage
+08/12/2018 02:07:02 AM Service: 1 dispatched to ('Gdzzmd 12, 14.27.50.61', Decimal('3.012478572321478013118020477'))
+08/12/2018 02:07:02 AM Service: 2 in re-calculation stage
+08/12/2018 02:07:02 AM Service: 4 in scheduling stage
+08/12/2018 02:07:02 AM Service: 5 in scheduling stage
+08/12/2018 02:07:02 AM Service: 6 in scheduling stage
+08/12/2018 02:07:02 AM Service: 2 dispatched to ('Awwktk 12, 13.28.42.59', Decimal('5.392697413091717008261487371'))
+08/12/2018 02:07:02 AM Service: 3 in scheduling stage
+08/12/2018 02:07:02 AM Service: 4 dispatched to ('Yjobhc 12, 13.27.42.51', Decimal('2.257530562339976248824279875'))
+08/12/2018 02:07:02 AM Service: 7 in scheduling stage
+08/12/2018 02:07:02 AM Service: 5 in re-calculation stage
+08/12/2018 02:07:02 AM Service: 6 in re-calculation stage
+08/12/2018 02:07:02 AM Service: 3 dispatched to ('Lusyrz 6, 12.21.42.59', Decimal('4.054017436129719675640852379'))
+08/12/2018 02:07:02 AM Service: 7 in re-calculation stage
+08/12/2018 02:07:02 AM Service: 8 in scheduling stage
+08/12/2018 02:07:02 AM Service: 5 dispatched to ('Bikndj 13, 14.29.44.55', Decimal('6.230794858196517610201029871'))
+08/12/2018 02:07:02 AM Service: 9 in scheduling stage
+08/12/2018 02:07:02 AM Service: 6 dispatched to ('Wbabhu 17, 19.20.37.56', Decimal('8.915058900872731845969826685'))
+08/12/2018 02:07:02 AM Service: 7 dispatched to ('Dyhxhi 41, 15.24.45.67', Decimal('6.614259260024686078180068950'))
+08/12/2018 02:07:02 AM Service: 8 dispatched to ('Elhulp 17, 17.29.48.65', Decimal('3.356092638304946845903468096'))
+08/12/2018 02:07:02 AM Service: 10 in scheduling stage
+08/12/2018 02:07:02 AM Service: 9 in re-calculation stage
+08/12/2018 02:07:02 AM Service: 11 in scheduling stage
+08/12/2018 02:07:02 AM Service: 12 in scheduling stage
+08/12/2018 02:07:02 AM Service: 10 dispatched to ('Qtqemt 49, 17.23.37.63', Decimal('2.685506371523098674483139158'))
+08/12/2018 02:07:02 AM Service: 14 in scheduling stage
+08/12/2018 02:07:02 AM Service: 9 dispatched to ('Jqbczl 34, 18.20.37.66', Decimal('8.445811433017189788951788023'))
+08/12/2018 02:07:02 AM Service: 13 in scheduling stage
+08/12/2018 02:07:02 AM Service: 11 dispatched to ('Jqozzy 8, 13.29.44.56', Decimal('3.687614025091468246719139202'))
+08/12/2018 02:07:02 AM Service: 12 in re-calculation stage
+08/12/2018 02:07:02 AM Service: 14 in re-calculation stage
+08/12/2018 02:07:02 AM Service: 15 in scheduling stage
+08/12/2018 02:07:02 AM Service: 13 dispatched to ('Rgroax 40, 13.27.46.60', Decimal('3.251804506869661920888379821'))
+08/12/2018 02:07:02 AM Service: 16 in scheduling stage
+08/12/2018 02:07:02 AM Service: 12 dispatched to ('Lrjymz 47, 12.30.36.63', Decimal('8.883241139273960804327477365'))
+08/12/2018 02:07:02 AM Service: 14 dispatched to ('Zdgvgr 14, 10.30.45.68', Decimal('7.247273664389994354927855219'))
+08/12/2018 02:07:02 AM Service: 15 in re-calculation stage
+08/12/2018 02:07:02 AM Service: 17 in scheduling stage
+08/12/2018 02:07:02 AM Service: 16 dispatched to ('Vzpwnr 43, 14.23.40.64', Decimal('4.148223653712052736906899087'))
+08/12/2018 02:07:02 AM Service: 15 dispatched to ('Hpjnfp 46, 20.27.41.68', Decimal('6.010206170173765736133384097'))
+08/12/2018 02:07:02 AM Service: 18 in scheduling stage
+08/12/2018 02:07:02 AM Service: 17 dispatched to ('Qkubmf 46, 12.20.46.59', Decimal('3.558554326907801914146125428'))
+08/12/2018 02:07:02 AM Service: 20 in scheduling stage
+08/12/2018 02:07:03 AM Service: 19 in scheduling stage
+08/12/2018 02:07:03 AM Service: 18 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 21 in scheduling stage
+08/12/2018 02:07:03 AM Service: 20 dispatched to ('Wslurv 47, 16.24.32.60', Decimal('4.209555062253132675190081208'))
+08/12/2018 02:07:03 AM Service: 22 in scheduling stage
+08/12/2018 02:07:03 AM Service: 19 dispatched to ('Kdwysz 11, 20.28.32.55', Decimal('4.280383943381956933433381618'))
+08/12/2018 02:07:03 AM Service: 18 dispatched to ('Qphjxq 23, 18.29.31.50', Decimal('7.094713677528134031267935354'))
+08/12/2018 02:07:03 AM Service: 21 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 23 in scheduling stage
+08/12/2018 02:07:03 AM Service: 22 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 21 dispatched to ('Ifkedf 31, 17.30.46.51', Decimal('10.56072916600491223269670374'))
+08/12/2018 02:07:03 AM Service: 24 in scheduling stage
+08/12/2018 02:07:03 AM Service: 25 in scheduling stage
+08/12/2018 02:07:03 AM Service: 26 in scheduling stage
+08/12/2018 02:07:03 AM Service: 23 dispatched to ('Slbije 27, 19.21.43.57', Decimal('4.103500754609325775524738404'))
+08/12/2018 02:07:03 AM Service: 22 dispatched to ('Siuvrl 42, 20.24.42.64', Decimal('8.463304302671760768341167896'))
+08/12/2018 02:07:03 AM Service: 24 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 25 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 27 in scheduling stage
+08/12/2018 02:07:03 AM Service: 26 dispatched to ('Txfjgd 28, 13.29.36.68', Decimal('4.201261459201770489567861171'))
+08/12/2018 02:07:03 AM Service: 24 dispatched to ('Jnzvle 48, 14.23.36.64', Decimal('7.404162126672448570201281165'))
+08/12/2018 02:07:03 AM Service: 28 in scheduling stage
+08/12/2018 02:07:03 AM Service: 29 in scheduling stage
+08/12/2018 02:07:03 AM Service: 25 dispatched to ('Sojnjw 1, 17.30.46.51', Decimal('6.604262604919356855503460235'))
+08/12/2018 02:07:03 AM Service: 27 dispatched to ('Kzlrkz 6, 10.28.44.57', Decimal('2.816950200460604324643674794'))
+08/12/2018 02:07:03 AM Service: 28 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 30 in scheduling stage
+08/12/2018 02:07:03 AM Service: 29 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 31 in scheduling stage
+08/12/2018 02:07:03 AM Service: 28 dispatched to ('Fucqdq 30, 17.24.30.50', Decimal('4.501975794939281121582306457'))
+08/12/2018 02:07:03 AM Service: 32 in scheduling stage
+08/12/2018 02:07:03 AM Service: 30 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 33 in scheduling stage
+08/12/2018 02:07:03 AM Service: 29 dispatched to ('Luukci 23, 14.25.37.66', Decimal('7.216475770401312450256233723'))
+08/12/2018 02:07:03 AM Service: 31 dispatched to ('Rfoscl 49, 17.22.32.61', Decimal('3.341592212942607300507158111'))
+08/12/2018 02:07:03 AM Service: 32 dispatched to ('Bzyzjc 31, 10.25.41.57', Decimal('2.925866763036873805035233694'))
+08/12/2018 02:07:03 AM Service: 30 dispatched to ('Dbqibh 23, 18.24.38.68', Decimal('6.563337514085158411835675955'))
+08/12/2018 02:07:03 AM Service: 34 in scheduling stage
+08/12/2018 02:07:03 AM Service: 33 dispatched to ('Mcwlpa 22, 16.22.44.54', Decimal('4.320575330097313153817960215'))
+08/12/2018 02:07:03 AM Service: 35 in scheduling stage
+08/12/2018 02:07:03 AM Service: 36 in scheduling stage
+08/12/2018 02:07:03 AM Service: 34 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 38 in scheduling stage
+08/12/2018 02:07:03 AM Service: 37 in scheduling stage
+08/12/2018 02:07:03 AM Service: 35 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 36 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 39 in scheduling stage
+08/12/2018 02:07:03 AM Service: 34 dispatched to ('Zctncs 43, 16.25.31.65', Decimal('6.016314605130397394560011232'))
+08/12/2018 02:07:03 AM Service: 38 in re-calculation stage
+08/12/2018 02:07:03 AM Service: 37 dispatched to ('Xkuqer 25, 19.28.33.50', Decimal('1.938169129739916512343377399'))
+08/12/2018 02:07:03 AM Service: 35 dispatched to ('Lxxozz 15, 12.28.38.54', Decimal('11.45296802657808458028155324'))
+08/12/2018 02:07:03 AM Service: 36 dispatched to ('Eizsaa 44, 11.27.32.61', Decimal('8.278128548671301696219740031'))
+08/12/2018 02:07:03 AM Service: 39 dispatched to ('Byejqc 28, 11.25.50.60', Decimal('3.937344030094522721179963388'))
+08/12/2018 02:07:03 AM Service: 38 dispatched to ('Zcpaun 20, 14.30.38.59', Decimal('7.678785793186704494343560785'))
+08/12/2018 02:07:03 AM Service: 40 in scheduling stage
+08/12/2018 02:07:03 AM Service: 42 in scheduling stage
+08/12/2018 02:07:03 AM Service: 41 in scheduling stage
+08/12/2018 02:07:03 AM Service: 43 in scheduling stage
+08/12/2018 02:07:03 AM Service: 44 in scheduling stage
+08/12/2018 02:07:04 AM Service: 45 in scheduling stage
+08/12/2018 02:07:04 AM Service: 40 dispatched to ('Jrwmzu 50, 17.21.35.68', Decimal('4.563235459300266561529232835'))
+08/12/2018 02:07:04 AM Service: 42 dispatched to ('Euhebm 29, 18.22.30.56', Decimal('1.909259203778767306846060061'))
+08/12/2018 02:07:04 AM Service: 41 dispatched to ('Xarmbb 2, 11.26.40.56', Decimal('2.362936666656548232016429937'))
+08/12/2018 02:07:04 AM Service: 43 in re-calculation stage
+08/12/2018 02:07:04 AM Service: 44 in re-calculation stage
+08/12/2018 02:07:04 AM Service: 45 in re-calculation stage
+08/12/2018 02:07:04 AM Service: 43 dispatched to ('Bijbuf 34, 11.22.43.57', Decimal('7.173559943379481667019120105'))
+08/12/2018 02:07:04 AM Service: 44 dispatched to ('Rruhmv 48, 17.30.42.53', Decimal('10.77245176628079086522242018'))
+08/12/2018 02:07:04 AM Service: 45 dispatched to ('Dvmmvo 37, 11.21.41.52', Decimal('6.416702257185587080672324371'))
+08/12/2018 02:07:04 AM Service: 47 in scheduling stage
+08/12/2018 02:07:04 AM Service: 49 in scheduling stage
+08/12/2018 02:07:04 AM Service: 48 in scheduling stage
+08/12/2018 02:07:04 AM Service: 47 dispatched to ('Tfbrdy 19, 10.21.31.66', Decimal('3.051833403483942298115235975'))
+08/12/2018 02:07:04 AM Service: 46 in scheduling stage
+08/12/2018 02:07:04 AM Service: 49 in re-calculation stage
+08/12/2018 02:07:04 AM Service: 48 in re-calculation stage
+08/12/2018 02:07:04 AM Service: 46 dispatched to ('Mypkkp 32, 18.28.34.69', Decimal('3.850051454568376552045769166'))
+08/12/2018 02:07:04 AM Service: 49 dispatched to ('Vnubaj 32, 15.25.41.55', Decimal('8.921771956108182935599218279'))
+08/12/2018 02:07:04 AM Service: 48 dispatched to ('Qzxkjy 42, 19.30.42.66', Decimal('5.585216210735201121550707441'))
+08/12/2018 02:08:01 AM Service: 3 in scheduling stage
+08/12/2018 02:08:01 AM Service: 2 in scheduling stage
+08/12/2018 02:08:01 AM Service: 3 in re-calculation stage
+08/12/2018 02:08:01 AM Service: 4 in scheduling stage
+08/12/2018 02:08:02 AM Service: 5 in scheduling stage
+08/12/2018 02:08:02 AM Service: 6 in scheduling stage
+08/12/2018 02:08:02 AM Service: 1 in scheduling stage
+08/12/2018 02:08:02 AM Service: 2 in re-calculation stage
+08/12/2018 02:08:02 AM Service: 3 dispatched to ('Eahpfo 27, 20.24.50.53', Decimal('6.205767717820261655528091747'))
+08/12/2018 02:08:02 AM Service: 4 dispatched to ('Vbnzbn 28, 14.24.43.62', Decimal('3.264162981312020174581179455'))
+08/12/2018 02:08:02 AM Service: 5 in re-calculation stage
+08/12/2018 02:08:02 AM Service: 6 dispatched to ('Zowpgk 9, 11.27.46.65', Decimal('3.935496411622944911968511780'))
+08/12/2018 02:08:02 AM Service: 1 dispatched to ('Tyevpt 8, 11.23.33.67', Decimal('2.305210713157620241077817803'))
+08/12/2018 02:08:02 AM Service: 2 dispatched to ('Lekvvh 24, 15.27.36.65', Decimal('5.752394585294258140580210124'))
+08/12/2018 02:08:02 AM Service: 5 dispatched to ('Cbczvq 3, 10.29.32.62', Decimal('7.820128944294131243434161441'))
+08/12/2018 02:08:02 AM Service: 7 in scheduling stage
+08/12/2018 02:08:02 AM Service: 8 in scheduling stage
+08/12/2018 02:08:02 AM Service: 9 in scheduling stage
+08/12/2018 02:08:02 AM Service: 7 in re-calculation stage
+08/12/2018 02:08:02 AM Service: 8 in re-calculation stage
+08/12/2018 02:08:02 AM Service: 9 dispatched to ('Zoaeyc 45, 17.25.46.56', Decimal('3.039680851941638823388534132'))
+08/12/2018 02:08:02 AM Service: 7 dispatched to ('Zxuohi 9, 11.24.49.68', Decimal('5.311944688819489287651768756'))
+08/12/2018 02:08:02 AM Service: 8 dispatched to ('Qebagr 19, 16.25.32.50', Decimal('7.376327421327080627528884680'))
+08/12/2018 02:08:52 AM Service: 4 in scheduling stage
+08/12/2018 02:08:52 AM Service: 1 in scheduling stage
+08/12/2018 02:08:52 AM Service: 4 dispatched to ('Lpdrsp 43, 14.29.30.55', Decimal('3.215041298180116486783626885'))
+08/12/2018 02:08:52 AM Service: 5 in scheduling stage
+08/12/2018 02:08:52 AM Service: 2 in scheduling stage
+08/12/2018 02:08:52 AM Service: 3 in scheduling stage
+08/12/2018 02:08:52 AM Service: 1 in re-calculation stage
+08/12/2018 02:08:52 AM Service: 5 dispatched to ('Gnaecz 28, 18.28.44.70', Decimal('3.552245638667457223832677577'))
+08/12/2018 02:08:52 AM Service: 7 in scheduling stage
+08/12/2018 02:08:52 AM Service: 6 in scheduling stage
+08/12/2018 02:08:52 AM Service: 2 dispatched to ('Txholy 6, 15.26.35.60', Decimal('2.392665262327492692914975805'))
+08/12/2018 02:08:52 AM Service: 3 dispatched to ('Aeobnm 40, 18.21.50.62', Decimal('4.824389964056427379758963320'))
+08/12/2018 02:08:52 AM Service: 1 dispatched to ('Nwukgv 10, 19.20.36.62', Decimal('5.272300555239166555107925151'))
+08/12/2018 02:08:52 AM Service: 7 in re-calculation stage
+08/12/2018 02:08:52 AM Service: 8 in scheduling stage
+08/12/2018 02:08:52 AM Service: 6 dispatched to ('Gaxahq 18, 14.20.47.54', Decimal('3.934566158252027743554161544'))
+08/12/2018 02:08:52 AM Service: 9 in scheduling stage
+08/12/2018 02:08:52 AM Service: 7 dispatched to ('Vngjlz 41, 20.28.35.52', Decimal('8.975677158228320043463633094'))
+08/12/2018 02:08:52 AM Service: 8 in re-calculation stage
+08/12/2018 02:08:52 AM Service: 9 dispatched to ('Nkpmqz 36, 10.26.38.56', Decimal('3.799614129523898796555192718'))
+08/12/2018 02:08:52 AM Service: 8 dispatched to ('Lhiaza 29, 11.21.40.57', Decimal('9.295511608585308489943364457'))
+08/12/2018 02:08:53 AM Service: 1 in scheduling stage
+08/12/2018 02:08:53 AM Service: 1 dispatched to ('Blwwbz 49, 16.21.39.62', Decimal('4.376439646782440481295064373'))
+08/12/2018 02:08:53 AM Service: 5 in scheduling stage
+08/12/2018 02:08:53 AM Service: 2 in scheduling stage
+08/12/2018 02:08:53 AM Service: 3 in scheduling stage
+08/12/2018 02:08:53 AM Service: 5 dispatched to ('Rftemt 12, 14.27.36.58', Decimal('2.937884688164663059373818735'))
+08/12/2018 02:08:53 AM Service: 4 in scheduling stage
+08/12/2018 02:08:53 AM Service: 6 in scheduling stage
+08/12/2018 02:08:53 AM Service: 7 in scheduling stage
+08/12/2018 02:08:53 AM Service: 2 in re-calculation stage
+08/12/2018 02:08:53 AM Service: 3 in re-calculation stage
+08/12/2018 02:08:53 AM Service: 4 dispatched to ('Wqrajj 43, 16.27.44.56', Decimal('4.230173543724585900814245614'))
+08/12/2018 02:08:53 AM Service: 8 in scheduling stage
+08/12/2018 02:08:53 AM Service: 6 dispatched to ('Aolnuv 40, 20.29.47.51', Decimal('2.571685516285246558759798534'))
+08/12/2018 02:08:53 AM Service: 7 in re-calculation stage
+08/12/2018 02:08:53 AM Service: 2 dispatched to ('Iqueqv 39, 18.20.36.55', Decimal('10.40993734779450131296708210'))
+08/12/2018 02:08:53 AM Service: 3 dispatched to ('Ieemuh 33, 18.21.33.54', Decimal('4.170015578301200585772862591'))
+08/12/2018 02:08:53 AM Service: 8 dispatched to ('Dnelok 47, 13.27.33.66', Decimal('2.617890113070248525907001637'))
+08/12/2018 02:08:53 AM Service: 9 in scheduling stage
+08/12/2018 02:08:53 AM Service: 7 dispatched to ('Sxdmpu 45, 11.25.46.67', Decimal('5.861083680155901535094139242'))
+08/12/2018 02:08:53 AM Service: 9 in re-calculation stage
+08/12/2018 02:08:53 AM Service: 9 dispatched to ('Mhchso 10, 18.22.30.55', Decimal('7.019426194956906993424725119'))
+08/12/2018 02:08:53 AM Service: 3 in scheduling stage
+08/12/2018 02:08:53 AM Service: 3 in re-calculation stage
+08/12/2018 02:08:53 AM Service: 2 in scheduling stage
+08/12/2018 02:08:53 AM Service: 4 in scheduling stage
+08/12/2018 02:08:53 AM Service: 3 dispatched to ('Tkoztm 40, 17.25.49.64', Decimal('9.603953653541818066559367928'))
+08/12/2018 02:08:53 AM Service: 6 in scheduling stage
+08/12/2018 02:08:53 AM Service: 5 in scheduling stage
+08/12/2018 02:08:53 AM Service: 1 in scheduling stage
+08/12/2018 02:08:53 AM Service: 2 in re-calculation stage
+08/12/2018 02:08:53 AM Service: 4 in re-calculation stage
+08/12/2018 02:08:53 AM Service: 6 dispatched to ('Gzfftb 20, 17.25.32.53', Decimal('2.104845958964741502984476206'))
+08/12/2018 02:08:53 AM Service: 7 in scheduling stage
+08/12/2018 02:08:53 AM Service: 5 dispatched to ('Unxfhl 34, 16.27.45.56', Decimal('2.609821396681687362906798979'))
+08/12/2018 02:08:53 AM Service: 1 dispatched to ('Vopzkf 47, 14.26.35.51', Decimal('4.420386286722718589376965606'))
+08/12/2018 02:08:53 AM Service: 2 dispatched to ('Pemkub 39, 16.28.39.66', Decimal('9.112228275239209664347229626'))
+08/12/2018 02:08:53 AM Service: 4 dispatched to ('Iytcpp 31, 12.20.49.67', Decimal('7.205064038700473646563062944'))
+08/12/2018 02:08:53 AM Service: 7 dispatched to ('Jofdlv 18, 14.23.34.51', Decimal('2.976399833001641329977776655'))
+08/12/2018 02:08:53 AM Service: 8 in scheduling stage
+08/12/2018 02:08:53 AM Service: 9 in scheduling stage
+08/12/2018 02:08:53 AM Service: 8 in re-calculation stage
+08/12/2018 02:08:53 AM Service: 9 dispatched to ('Uhbpfi 19, 10.20.49.60', Decimal('3.389348771053143558694492227'))
+08/12/2018 02:08:53 AM Service: 8 dispatched to ('Xqacvj 12, 15.24.34.57', Decimal('6.150861318894551834894073702'))
+08/12/2018 02:08:54 AM Service: 2 in scheduling stage
+08/12/2018 02:08:54 AM Service: 2 in re-calculation stage
+08/12/2018 02:08:54 AM Service: 1 in scheduling stage
+08/12/2018 02:08:54 AM Service: 2 dispatched to ('Prozpw 26, 14.20.48.52', Decimal('8.786628518396797270056046806'))
+08/12/2018 02:08:54 AM Service: 5 in scheduling stage
+08/12/2018 02:08:54 AM Service: 3 in scheduling stage
+08/12/2018 02:08:54 AM Service: 6 in scheduling stage
+08/12/2018 02:08:54 AM Service: 1 dispatched to ('Niwtbw 27, 12.26.38.57', Decimal('3.407346703467341948479399293'))
+08/12/2018 02:08:54 AM Service: 4 in scheduling stage
+08/12/2018 02:08:54 AM Service: 5 dispatched to ('Hayxwu 50, 14.24.35.54', Decimal('2.738449064349252213826778181'))
+08/12/2018 02:08:54 AM Service: 7 in scheduling stage
+08/12/2018 02:08:54 AM Service: 3 dispatched to ('Frcfbu 40, 14.30.32.64', Decimal('4.247576438560813999840427905'))
+08/12/2018 02:08:54 AM Service: 6 dispatched to ('Blcsja 12, 14.25.33.57', Decimal('4.580999604383214504590087056'))
+08/12/2018 02:08:54 AM Service: 4 dispatched to ('Uadmvt 42, 14.27.49.61', Decimal('3.083557293143014444861297979'))
+08/12/2018 02:08:54 AM Service: 8 in scheduling stage
+08/12/2018 02:08:54 AM Service: 7 dispatched to ('Rdhsql 3, 20.30.39.61', Decimal('3.051779552296178544724670195'))
+08/12/2018 02:08:54 AM Service: 9 in scheduling stage
+08/12/2018 02:08:54 AM Service: 8 dispatched to ('Ywiwzg 22, 20.26.48.59', Decimal('3.688622146827902593621101668'))
+08/12/2018 02:08:54 AM Service: 9 dispatched to ('Gewwqm 29, 20.23.38.52', Decimal('3.027289164486354094920949068'))
+08/12/2018 02:08:54 AM Service: 3 in scheduling stage
+08/12/2018 02:08:54 AM Service: 1 in scheduling stage
+08/12/2018 02:08:54 AM Service: 6 in scheduling stage
+08/12/2018 02:08:54 AM Service: 2 in scheduling stage
+08/12/2018 02:08:54 AM Service: 3 in re-calculation stage
+08/12/2018 02:08:54 AM Service: 1 in re-calculation stage
+08/12/2018 02:08:54 AM Service: 4 in scheduling stage
+08/12/2018 02:08:54 AM Service: 5 in scheduling stage
+08/12/2018 02:08:54 AM Service: 6 in re-calculation stage
+08/12/2018 02:08:54 AM Service: 2 dispatched to ('Peltnj 22, 13.23.34.63', Decimal('3.091809645005561338293404887'))
+08/12/2018 02:08:54 AM Service: 3 dispatched to ('Qbniyr 3, 15.21.36.63', Decimal('10.20920128611873892392951974'))
+08/12/2018 02:08:54 AM Service: 1 dispatched to ('Xcddpt 26, 12.24.43.64', Decimal('7.225570869319905948628078324'))
+08/12/2018 02:08:54 AM Service: 4 in re-calculation stage
+08/12/2018 02:08:54 AM Service: 5 dispatched to ('Ididvs 39, 16.27.42.65', Decimal('4.145487619958266328800161042'))
+08/12/2018 02:08:54 AM Service: 6 dispatched to ('Tkbfas 11, 14.21.41.55', Decimal('6.487567117117308747836985272'))
+08/12/2018 02:08:54 AM Service: 7 in scheduling stage
+08/12/2018 02:08:54 AM Service: 4 dispatched to ('Cmirea 36, 20.22.49.66', Decimal('7.750075706353818670830895748'))
+08/12/2018 02:08:54 AM Service: 8 in scheduling stage
+08/12/2018 02:08:54 AM Service: 9 in scheduling stage
+08/12/2018 02:08:54 AM Service: 7 in re-calculation stage
+08/12/2018 02:08:54 AM Service: 8 dispatched to ('Rfmisu 34, 14.20.45.63', Decimal('4.601962458103933591188548684'))
+08/12/2018 02:08:54 AM Service: 9 dispatched to ('Apbegq 44, 12.22.36.70', Decimal('2.715215483046588887859226012'))
+08/12/2018 02:08:54 AM Service: 7 dispatched to ('Xdsyom 26, 15.28.46.66', Decimal('8.138725682438533644059647651'))
+08/12/2018 02:08:55 AM Service: 5 in scheduling stage
+08/12/2018 02:08:55 AM Service: 5 in re-calculation stage
+08/12/2018 02:08:55 AM Service: 3 in scheduling stage
+08/12/2018 02:08:55 AM Service: 2 in scheduling stage
+08/12/2018 02:08:55 AM Service: 5 dispatched to ('Jkindx 50, 10.21.34.58', Decimal('6.600684589356101535261404934'))
+08/12/2018 02:08:55 AM Service: 6 in scheduling stage
+08/12/2018 02:08:55 AM Service: 1 in scheduling stage
+08/12/2018 02:08:55 AM Service: 3 dispatched to ('Farnha 30, 14.26.38.68', Decimal('3.428460469800435545573140345'))
+08/12/2018 02:08:55 AM Service: 4 in scheduling stage
+08/12/2018 02:08:55 AM Service: 2 dispatched to ('Epejya 12, 11.29.30.57', Decimal('4.421107289252700141064736333'))
+08/12/2018 02:08:55 AM Service: 6 dispatched to ('Qphjxq 23, 15.27.42.59', Decimal('3.805636550159812309267180194'))
+08/12/2018 02:08:55 AM Service: 7 in scheduling stage
+08/12/2018 02:08:55 AM Service: 1 dispatched to ('Psahak 1, 18.21.39.53', Decimal('2.559837302106379349046413038'))
+08/12/2018 02:08:55 AM Service: 4 dispatched to ('Ikecyy 48, 17.26.50.63', Decimal('4.650743121873717413589607640'))
+08/12/2018 02:08:55 AM Service: 8 in scheduling stage
+08/12/2018 02:08:55 AM Service: 7 dispatched to ('Bomjob 19, 12.21.39.57', Decimal('3.309578322189094657865271465'))
+08/12/2018 02:08:55 AM Service: 9 in scheduling stage
+08/12/2018 02:08:55 AM Service: 8 in re-calculation stage
+08/12/2018 02:08:55 AM Service: 9 in re-calculation stage
+08/12/2018 02:08:55 AM Service: 8 dispatched to ('Ojfskg 21, 17.29.32.61', Decimal('8.658587907010140279895871353'))
+08/12/2018 02:08:55 AM Service: 9 dispatched to ('Xwdvqx 22, 20.26.42.66', Decimal('10.38881776615603266545715814'))
+08/12/2018 02:08:55 AM Service: 1 in scheduling stage
+08/12/2018 02:08:55 AM Service: 4 in scheduling stage
+08/12/2018 02:08:55 AM Service: 1 dispatched to ('Vrnptt 8, 18.30.38.63', Decimal('2.838840671129935545121681434'))
+08/12/2018 02:08:55 AM Service: 5 in scheduling stage
+08/12/2018 02:08:55 AM Service: 3 in scheduling stage
+08/12/2018 02:08:55 AM Service: 2 in scheduling stage
+08/12/2018 02:08:55 AM Service: 4 in re-calculation stage
+08/12/2018 02:08:55 AM Service: 6 in scheduling stage
+08/12/2018 02:08:55 AM Service: 5 in re-calculation stage
+08/12/2018 02:08:55 AM Service: 3 in re-calculation stage
+08/12/2018 02:08:55 AM Service: 2 in re-calculation stage
+08/12/2018 02:08:55 AM Service: 4 dispatched to ('Nzeyyi 12, 10.20.37.55', Decimal('7.005806361783812996613107771'))
+08/12/2018 02:08:55 AM Service: 7 in scheduling stage
+08/12/2018 02:08:55 AM Service: 6 dispatched to ('Wylxzi 13, 20.28.36.53', Decimal('3.356558974993523719460693266'))
+08/12/2018 02:08:55 AM Service: 5 dispatched to ('Olqbyc 38, 10.29.41.58', Decimal('7.042879273774019909408229529'))
+08/12/2018 02:08:55 AM Service: 3 dispatched to ('Yopmsm 24, 12.24.47.55', Decimal('7.097596775093087285809828816'))
+08/12/2018 02:08:55 AM Service: 2 dispatched to ('Pnnsgs 42, 15.23.35.50', Decimal('10.45740468869822251146442023'))
+08/12/2018 02:08:55 AM Service: 7 dispatched to ('Mqpmis 30, 20.25.30.57', Decimal('3.257523219481751117006534035'))
+08/12/2018 02:08:55 AM Service: 8 in scheduling stage
+08/12/2018 02:08:55 AM Service: 9 in scheduling stage
+08/12/2018 02:08:55 AM Service: 8 in re-calculation stage
+08/12/2018 02:08:55 AM Service: 9 dispatched to ('Xdsyom 26, 15.26.40.52', Decimal('3.094981393397680672968350797'))
+08/12/2018 02:08:55 AM Service: 8 dispatched to ('Btzaqf 1, 16.21.43.65', Decimal('5.192372871808814515250604696'))
+08/12/2018 02:08:58 AM Service: 2 in scheduling stage
+08/12/2018 02:08:58 AM Service: 3 in scheduling stage
+08/12/2018 02:08:58 AM Service: 2 in re-calculation stage
+08/12/2018 02:08:58 AM Service: 4 in scheduling stage
+08/12/2018 02:08:58 AM Service: 3 in re-calculation stage
+08/12/2018 02:08:58 AM Service: 2 dispatched to ('Wthtfq 14, 15.28.30.54', Decimal('7.322716160977013946653573976'))
+08/12/2018 02:08:58 AM Service: 6 in scheduling stage
+08/12/2018 02:08:58 AM Service: 1 in scheduling stage
+08/12/2018 02:08:58 AM Service: 4 in re-calculation stage
+08/12/2018 02:08:58 AM Service: 5 in scheduling stage
+08/12/2018 02:08:58 AM Service: 3 dispatched to ('Ntszjw 39, 15.30.34.58', Decimal('10.22506310764068725246460643'))
+08/12/2018 02:08:58 AM Service: 6 dispatched to ('Jbagzn 46, 15.24.36.57', Decimal('4.060699586632372580780386822'))
+08/12/2018 02:08:58 AM Service: 1 dispatched to ('Idisyk 45, 17.30.49.64', Decimal('3.192004964460490726058232766'))
+08/12/2018 02:08:58 AM Service: 4 dispatched to ('Qqbsuc 22, 14.20.50.54', Decimal('10.58066851714937942495666441'))
+08/12/2018 02:08:58 AM Service: 7 in scheduling stage
+08/12/2018 02:08:58 AM Service: 5 dispatched to ('Iayawa 40, 17.25.40.54', Decimal('2.647259400353172804915901099'))
+08/12/2018 02:08:58 AM Service: 8 in scheduling stage
+08/12/2018 02:08:58 AM Service: 7 dispatched to ('Hdishv 18, 10.21.41.64', Decimal('4.628099037535696356803383839'))
+08/12/2018 02:08:58 AM Service: 9 in scheduling stage
+08/12/2018 02:08:58 AM Service: 8 dispatched to ('Yopmsm 24, 12.30.41.61', Decimal('2.879361017657478691930825586'))
+08/12/2018 02:08:58 AM Service: 9 dispatched to ('Xkwgvk 23, 15.23.36.64', Decimal('3.145949115613750179502059461'))
+08/12/2018 02:50:49 AM Service: 1 in scheduling stage
+08/12/2018 02:50:49 AM Service: 1 in re-calculation stage
+08/12/2018 02:50:49 AM Service: 1 dispatched to ('Goatuw 12, 14.22.43.61', Decimal('6.527784297903803854796762910'))
+08/12/2018 02:50:49 AM Service: 2 in scheduling stage
+08/12/2018 02:50:49 AM Service: 5 in scheduling stage
+08/12/2018 02:50:49 AM Service: 4 in scheduling stage
+08/12/2018 02:50:49 AM Service: 2 in re-calculation stage
+08/12/2018 02:50:49 AM Service: 3 in scheduling stage
+08/12/2018 02:50:49 AM Service: 5 in re-calculation stage
+08/12/2018 02:50:49 AM Service: 6 in scheduling stage
+08/12/2018 02:50:49 AM Service: 4 in re-calculation stage
+08/12/2018 02:50:49 AM Service: 2 dispatched to ('Uazobx 44, 14.25.30.53', Decimal('7.288340161000202213703892487'))
+08/12/2018 02:50:49 AM Service: 3 dispatched to ('Jikxsq 43, 12.28.31.52', Decimal('3.886799591752727372657637209'))
+08/12/2018 02:50:49 AM Service: 7 in scheduling stage
+08/12/2018 02:50:49 AM Service: 5 dispatched to ('Reosrl 45, 12.30.44.65', Decimal('6.174320694112875598725214839'))
+08/12/2018 02:50:49 AM Service: 6 dispatched to ('Bwexqd 47, 18.28.47.65', Decimal('3.994066937441373111756761843'))
+08/12/2018 02:50:49 AM Service: 4 dispatched to ('Vqzokh 6, 14.25.30.59', Decimal('8.393969526661449338358282132'))
+08/12/2018 02:50:49 AM Service: 7 dispatched to ('Akrcxu 31, 20.23.30.67', Decimal('3.982852355042065948576138704'))
+08/12/2018 02:50:50 AM Service: 8 in scheduling stage
+08/12/2018 02:50:50 AM Service: 8 dispatched to ('Lanvml 48, 14.30.34.66', Decimal('4.296952978964182443039969524'))
+08/12/2018 02:50:50 AM Service: 9 in scheduling stage
+08/12/2018 02:50:50 AM Service: 9 dispatched to ('Dhsyzx 22, 19.29.41.69', Decimal('3.606199285747395315997517798'))

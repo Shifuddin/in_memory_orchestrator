@@ -9,8 +9,9 @@ Created on Sun Jul  8 23:20:16 2018
 from genetic_algorithm import GeneticAlgorithm
 from sequential_algorithm import Sequential_Algorithm
 import threading
+from threading import current_thread
 from random import choice
-
+import logging
 
 
 def find_band_latency_origin(region_sp, origin_building):
@@ -80,7 +81,7 @@ class SchedulingState(object):
         
         scheduling_result, indicator =self.genetic.get_matching_node(bfs_result, origin_band, origin_latency, task_details, generation, mutation_factor)
         
-        print (str(service_entity['service_id']) + ' in scheduling stage')
+        logging.info (str(service_entity['service_id']) + ' in scheduling stage')
         if indicator == -1:
             scheduling_policy = service_entity.get('scheduling_policy')
             if scheduling_policy == 2:
@@ -101,38 +102,40 @@ class SchedulingState(object):
 class DispatchState(object):
     
     def perform(self, service_entity, scheduling_result, level):
-        print ( str(service_entity['service_id'])+' dispatched to ' + str(choice(list(scheduling_result.items()))))
+        logging.info ( str(service_entity['service_id'])+' dispatched to ' + str(choice(list(scheduling_result.items()))))
         return 0, scheduling_result, level
 
 
 class RecalculationState(object):
     
     def perform(self, service_entity, scheduling_result , level):
-        print (str(service_entity['service_id']) + ' in re-calculation stage')
+        logging.info (str(service_entity['service_id']) + ' in re-calculation stage')
         return 2, scheduling_result, level
 
 class RetryState(object):
     
     def perform(self, service_entity, scheduling_result , level):
-        print (str(service_entity['service_id']) + ' in retry stage')
+        logging.info (str(service_entity['service_id']) + ' in retry stage')
         level += 1
         return 1, scheduling_result, level
 
 class HoldingState(object):
+    
     def perform(self, service_entity, scheduling_result, level):
-        print (str(service_entity['service_id']) + ' in holding stage')
+        logging.info(str(service_entity['service_id']) + ' in holding stage')
         return 0, scheduling_result, level
 
 
 class Scheduler(threading.Thread):
-    def __init__(self, region_supervisor, service_queue):
+    def __init__(self, region_supervisor, service_queue, threadnumber):
         threading.Thread.__init__(self)
         self.region_sp = region_supervisor
         self.genetic = GeneticAlgorithm(region_supervisor)
         self.sequential = Sequential_Algorithm(region_supervisor)
         self.service_queue = service_queue
         self.states = [InitialState(), SchedulingState(self.region_sp, self.genetic), DispatchState(), RecalculationState(), RetryState(), HoldingState()]
-  
+        logging.basicConfig(filename='Scheduler '+str(threadnumber)+ ' .log', format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.INFO)
+
     def run(self):
         
     

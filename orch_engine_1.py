@@ -15,7 +15,7 @@ class Engine():
         self.region_sp = Regionsupervisor()
         
         for i in range(6):
-            t = Scheduler(self.region_sp, self.service_queue)
+            t = Scheduler(self.region_sp, self.service_queue, i)
             t.setDaemon(True)
             t.start()
         
